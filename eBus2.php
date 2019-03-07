@@ -2,14 +2,14 @@
 session_start();
 $fullNameValue = "";
 $totalValue2 = "";
-$emailAddress = "";
+$mobileNumber = "";
 
 /* 
  * Create a session variable for the mobile number
  */
 $totalValue2 = $_POST['txtTotal'];
 $_SESSION['txtName'] = $fullNameValue;
-$_SESSION['txtEmail'] = $emailAddress;
+$_SESSION['txtNum'] = $mobileNumber;
 $_SESSION['txtTotal'] = $totalValue2;
 
 
@@ -88,10 +88,10 @@ li a:hover {
                               <td><input style=width:130% type="text" id="txtName" class="input1" name="txtName" value="" required/></td>                              
                           </tr>
                           <tr>
-                              <td>Email Address</td>
+                              <td>Mobile Number</td>
                           </tr>
                           <tr>
-                              <td><input style=width:130% type="text" id="txtEmail" name="txtEmail" class="input2" value="" required/></td>                             
+                              <td><input style=width:130% type="text" id="txtNum" name="txtNum" class="input2" value="" pattern="[0-9][0-9][0-9][-][0-9][0-9][0-9][0-9][0-9][0-9][0-9]" required/></td>                             
                           </tr>
                           <tr>
                               <td>PIN</td>

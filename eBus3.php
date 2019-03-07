@@ -54,10 +54,12 @@ li a:hover {
     session_start();
     $totalValue2 = $_POST['txtTotal'];
     $fullNameValue = $_POST['txtName'];
-    $emailAddress = $_POST['txtEmail'];
+    $mobileNumber = $_POST['txtNum'];
     echo "<B>"."The name is : "."</B>".$fullNameValue.".";
     echo "<br></br>";
-    echo "<B>"."The mobile number is : "."</B>".$emailAddress.".";
+    echo "<br></br>";
+    echo "<B>"."The mobile number is : "."</B>".$mobileNumber.".";
+    echo "<br></br>";
     echo "<br></br>";
     echo "<B>"."The total value is : "."</B>".$totalValue2.".";
     ?>
